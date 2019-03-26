@@ -2,6 +2,9 @@ svg4everybody();
 
 jQuery(document).ready( function() {
 
+    // show line-numbersj
+    jQuery('pre').addClass("line-numbers").css("white-space", "pre-wrap");
+
     // Makes all videos responsive.
     jQuery(".the-content").fitVids();
 
@@ -31,7 +34,7 @@ jQuery(document).ready( function() {
             jQuery(this).append('<a class="heading-marker" href="#' + headingID + '">&#35;</a>');
         },
         mouseleave: function () {
-            jQuery(this).children('a').remove();
+            jQuery(this).children('a.heading-marker').remove();
         }
     });
 

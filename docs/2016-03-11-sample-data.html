@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Portfolio | Roy Guo &mdash; Web developer </title>
-    <meta property="og:title" content="Portfolio | Roy Guo &mdash; Web developer " />
-    <meta name="twitter:title" content="Portfolio | Roy Guo &mdash; Web developer " />
+    <title>Sample Data | Roy Guo &mdash; Web developer </title>
+    <meta property="og:title" content="Sample Data | Roy Guo &mdash; Web developer " />
+    <meta name="twitter:title" content="Sample Data | Roy Guo &mdash; Web developer " />
 
     <meta name="description" content="重启博客计划、记录生活点滴">
     <meta name="description" property="og:description" content="重启博客计划、记录生活点滴" />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@gx761" />
     
-    <meta property="og:url" content="http://gx761.github.io/portfolio/" />
+    <meta property="og:url" content="http://gx761.github.io/docs/2016-03-11-sample-data" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -98,7 +98,7 @@
 
     <link rel="stylesheet" href="http://gx761.github.io/assets/css/prism.css">
 
-    <link rel="canonical" href="http://gx761.github.io/portfolio/">
+    <link rel="canonical" href="http://gx761.github.io/docs/2016-03-11-sample-data">
 
     <link rel="alternate" type="application/rss+xml" title="" href="http://gx761.github.io/feed.xml">
 </head>
@@ -135,7 +135,7 @@
                 
             
                 
-                    <a href="http://gx761.github.io/portfolio/" class="active">Portfolio</a>
+                    <a href="http://gx761.github.io/portfolio/" >Portfolio</a>
                 
             
                 
@@ -175,21 +175,163 @@
 </div>
 
 
-                <article class="post page single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-        <h2 itemprop="name headline">Portfolio</h2>
+        <ul>
+            <li><time datetime="2016-03-11T23:56:00+08:00" itemprop="datePublished">11 Mar, 2016</time></li>
+            
+                
+                <li class="cats">
+                    
+                        <a href="/categories/docs/">docs</a>
+                    
+                </li>
+                
+            
+        </ul>
+        <h2 itemprop="name headline">Sample Data</h2>
     </header>
 
     <div class="post-content">
-        <figure>
-    <img src="https://cdn.dribbble.com/users/1073937/screenshots/5036567/waterfall.png" />
-    <figcaption>Created by <a href="https://dribbble.com/HannahLizSharp" target="_blank_">Hannah Sharp</a></figcaption>
+        Markdown1 (or Textile), Liquid, HTML & CSS go in. Static sites come out ready for deployment.
+
+#### Headings
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+#### Blockquote
+
+> No more databases, comment moderation, or pesky updates to install—just your content.
+
+#### Unordered List
+
+* Jekyll
+    * Nested Jekyll
+    * Nested Ruby
+* Ruby
+* Markdown
+* Liquid
+
+#### Ordered List
+
+1. Jekyll
+    1. Nested Jekyll
+    2. Nested Ruby
+2. Ruby
+3. Markdown
+4. Liquid
+
+#### Link
+
+This is <a href="http://example.com/" title="Title">an example</a> inline link.
+
+#### Paragraph w/ strong, em, etc.
+
+These are just a few of the *available* **configuration** options. Many configuration options can <strike>either</strike> be specified as flags on the <abbr title="Command Line Tool">command line</abbr>, or alternatively (and more commonly) they can be specified in a _config.yml file at the root of the source directory. Jekyll will <a href="http://joro.me/" target="_blank">automatically use</a> the options from this file when run. For example, if you place the following lines in your _config.yml file.
+
+#### Image
+<figure class="aligncenter">
+	<img src="https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=73181f1c6d56b933b30de2bfe21fdf3b" />
+	<figcaption>Photo by <a href="https://unsplash.com/rmaedavis" target="_blank">Rachel Davis</a>.</figcaption>
 </figure>
 
-<p>In addition to writing posts, another thing you may want to do with your Jekyll site is create static pages. By taking advantage of the way Jekyll copies files and directories, this is easy to do. <a href="https://jekyllrb.com/docs/pages/" target="_blank">More Information</a></p>
+#### Video
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
+
+#### Default Code Block
+
+    This is code blog.
+
+#### Styled Code Block
+	
+{% highlight ruby linenos %}
+#!/usr/bin/ruby
+$LOAD_PATH << '.'
+require "support"
+
+class Decade
+include Week
+   no_of_yrs=10
+   def no_of_months
+      puts Week::FIRST_DAY
+      number=10*12
+      puts number
+   end
+end
+d1=Decade.new
+puts Week::FIRST_DAY
+Week.weeks_in_month
+Week.weeks_in_year
+d1.no_of_months
+{% endhighlight %}
+	
+#### Definition Lists
+	
+<dl>
+    <dt>Definition Title</dt>
+    <dd>Definition Description</dd>
+</dl>
+
+#### Paragraphs w/ Aligned Images
+
+The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways.
+
+<figure class="alignleft">
+	<img width="250" src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3f9c78df0edb464244bbabb04d1797d8" />
+	<figcaption>Photo by <a href="https://unsplash.com/dustinlee" target="_blank">Dustin Lee</a>.</figcaption>
+</figure>
+
+This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.
+
+Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub's servers for free.
+
+<figure class="alignright">
+	<img width="250" src="https://images.unsplash.com/photo-1442037025225-e1cffaa2dc23?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7fe04b68b0cb123bf568c6951c14b177" />
+	<figcaption>Photo by <a href="https://unsplash.com/lobostudiohamburg" target="_blank">LoboStudio Hamburg</a>.</figcaption>
+</figure>
+
+Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here's what to look out for.
+
+If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please file an issue and we’ll see about including it in this guide.
+
+The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
     </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Sample Data&p[summary]=Markdown1 (or Textile), Liquid, HTML & CSS go in. Static sites come out ready for deployment.
+
+#### Headings
+
+# Heading 1
+
+## Headi...&p[url]=http://gx761.github.io/docs/2016-03-11-sample-data" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gx761.github.io/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://gx761.github.io/docs/2016-03-11-sample-data&text=Markdown1 (or Textile), Liquid, HTML & CSS go in. Static sites come out ready for deployment.
+
+#### Headings
+
+# Heading 1
+
+## Headi...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gx761.github.io/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+    </footer>
 </article>
+
+
             </main>
         </div>
 
