@@ -1,4 +1,4 @@
-var hostname = "http://gx761.github.io";
+var hostname = "https://gx761.github.io";
 var index = lunr(function () {
     this.field('title')
     this.field('content', {boost: 10})
